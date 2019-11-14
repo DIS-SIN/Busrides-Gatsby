@@ -64,6 +64,16 @@ module.exports = {
         },
         /**
          *  Utility Plugins
+        */
+
+         /* gatsby-plugin-ghost-manifest
+            ----------------------------- 
+           url: https://www.gatsbyjs.org/packages/gatsby-plugin-manifest/
+
+           Seems to be based on gatsby-plugin-manifests. This plugin allows users to add the site to
+           their home screen on most mobile browsers. The manifest procides configuration and icons to
+           the phone. Part of the PWA spec 
+
          */
         {
             resolve: `gatsby-plugin-ghost-manifest`,
@@ -89,6 +99,15 @@ module.exports = {
               `,
             },
         },
+
+        /*
+         gatsby-plugin-feed
+         -------------------
+         url: https://www.gatsbyjs.org/packages/gatsby-plugin-feed/?=gatsby%20plugin%20fee
+
+         Create and RSS feed, uses the src/utils/rss/generate-feed.js
+
+         */
         {
             resolve: `gatsby-plugin-feed`,
             options: {
@@ -109,6 +128,16 @@ module.exports = {
                 ],
             },
         },
+        /*
+        gatsby-plugin-advanced-sitemap
+        -------------------------------
+
+        url: https://www.gatsbyjs.org/packages/gatsby-plugin-advanced-sitemap/?=gatsby%20plugin%20advanced
+
+        adds more power and configuration to default gatsby sitemap generator. More human and machine readable
+        site maps
+
+        */
         {
             resolve: `gatsby-plugin-advanced-sitemap`,
             options: {
@@ -179,9 +208,44 @@ module.exports = {
                 addUncaughtPages: true,
             },
         },
+        /*
+        gatsby-plugin-catch-links
+        --------------------------
+
+        url: https://www.gatsbyjs.org/packages/gatsby-plugin-catch-links/?=gatsby%20plugin%20catch
+
+        Intercepts all local links that have not been created in React using gatsby-link
+        */
         `gatsby-plugin-catch-links`,
+        /*
+        gatsby-plugin-react-helmet
+        ---------------------------
+
+        url: https://www.gatsbyjs.org/packages/gatsby-plugin-react-helmet/?=gatsby%20plugin%20react
+
+        Provides support for server rendering data with React Helmet, Lets you control your document head 
+        using their react component
+        */
         `gatsby-plugin-react-helmet`,
+
+        /*
+
+        gatsby-plugin-force-trailing-slashes
+        ------------------------------------
+
+        url: https://www.gatsbyjs.org/packages/gatsby-plugin-force-trailing-slashes/?=gatsby%20plugin%20force
+
+        Forces trailing slashes from your projects paths
+
+        */
         `gatsby-plugin-force-trailing-slashes`,
+        /*
+        gatsby-plugin-offline
+        
+        url: https://www.gatsbyjs.org/packages/gatsby-plugin-offline/?=gatsby%20plugin%20offl
+
+        Drop in support for making a Gatsby site work offline
+        */
         `gatsby-plugin-offline`,
     ],
 }
