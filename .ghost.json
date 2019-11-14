@@ -1,0 +1,12 @@
+{
+    "development": {
+        "apiUrl": "https://preproduction.ghost.busrides.ca",
+        "contentApiKey": "1d442b3966a838011b4eb88440",
+        "version": "v2"
+    },
+    "production": {
+        "apiUrl": "https://preproduction.ghost.busrides.ca",
+        "contentApiKey": "1d442b3966a838011b4eb88440",
+        "version": "v2"
+    }
+}

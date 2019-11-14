@@ -74,5 +74,4 @@ public
 yarn-error.log
 .netlify/
 
-# Ghost Credentials 
-*.ghost.json
+
